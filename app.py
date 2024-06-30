@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 predicted_animal = pickle.load(open('model.pkl','rb'))
 
 
-def user_input_features(predicted_price):
+def user_input_features(predicted_animal):
     st.title('Zoo Animal Type Prediction')
     st.header('User Input Features')
     hair = st.slider('Hair (0 = No, 1 = Yes)', 0, 1, 0)
